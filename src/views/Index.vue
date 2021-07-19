@@ -48,5 +48,6 @@
     .index-container {
       width: 100vw;
       height: 100vh;
+      min-height: 666px;
     }
   </style>

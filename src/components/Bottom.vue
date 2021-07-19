@@ -1,6 +1,6 @@
 <template>
     <div class="bottom">
-        <span class="bottom-tar">© 2005－2021 douban.com, all rights reserved 北京豆网科技有限公司</span>
+        <span class="bottom-tar" style="font-size:20px">© 2021, all rights reserved 专业实习小组</span>
         <span class="bottom-span">联系我们</span>
     </div>
 </template>

@@ -3,11 +3,13 @@ import Index from '../views/Index.vue'
 import Login from '../views/Login.vue'
 import Ebook from '../views/Ebook.vue'
 import MovieList from '../views/MovieList.vue'
+import MovieDetail from '../views/MovieDetail.vue'
 const routes = [
   {path:'/login',component:Login},
-  {path:'/',component:Index},
+  {path:'/1',component:Index},
   {path:'/ebook',component:Ebook},
-  {path:'/movieList',component:MovieList}
+  {path:'/movieList',component:MovieList},
+  {path:'/',component:MovieDetail}
 ]
 
 const router = createRouter({

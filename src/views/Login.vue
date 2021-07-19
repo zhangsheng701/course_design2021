@@ -28,6 +28,7 @@
         <div class="login-text-pwd">
             <i class="el-icon-key"></i>
             <el-input placeholder="请输入密码" v-model="password" show-password class="login-text-pwd-text"></el-input>
+            <img src="http://localhost:9090/" alt="" srcset="">
         </div>
         <el-input v-model="keycode" placeholder="验证码" style="width:120px;height:50px;display:block;margin-top:20px;position:absolute;font-size:17px;left:50%;transform:translate(-70%)"></el-input>
         <!-- <input type="text" placeholder="验证码" style="width:120px;height:50px;display:block;margin-top:20px;position:absolute;right:20px;"> -->
@@ -119,7 +120,13 @@
             repassword(){
                 this.pswdDif = (this.password===this.repassword)?"":"两次密码输入不一致"
             }
-        }
+        },
+        created() {
+            axios.defaults.withCredentials = true;
+            axios.get("http://localhost:9090/captcha").then((res)=>{
+                console.log(res);
+            })
+        },
     }
 </script>
 

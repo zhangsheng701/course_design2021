@@ -1,7 +1,8 @@
 <template>
     <div class="header-container">
         <div class="header-left">
-            <div>图标</div>
+            <img src="../assets/img/indexbg2.webp" alt="" srcset="" style="height:55px;width:55px;border-radius:50%" >
+            <span style="color:white;line-height:50px;font-size:20px;margin-left:10px" class="stext">搜你所想</span>
         </div>
         <div class="header-search-container">
             <input type="text" class="header-center-search" placeholder="电影搜索" style="padding-left:20px" v-model="scontent">
@@ -113,5 +114,17 @@
     }
     .header-login-btn-icon {
         color: blue;
+    }
+
+    /* 设置span图标后的字体 */
+    .stext {
+        font: 700 100px "Comic Sans MS";
+    color: white;
+    text-shadow: 0 0 20px skyblue,
+            10px -10px 30px skyblue,
+            20px -20px 40px skyblue,
+            -20px -60px 50px skyblue,
+            0px -80px 60px skyblue,
+            10px -40px 70px skyblue;
     }
 </style>
